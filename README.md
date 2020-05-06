@@ -47,3 +47,17 @@ Ref:
 Ref:
 - [Configuring dotnet CLI for use with GitHub Packages](https://help.github.com/en/packages/using-github-packages-with-your-projects-ecosystem/configuring-dotnet-cli-for-use-with-github-packages)
 
+## Install package to your project
+Using VS 2019
+1. go to manage Nuget package
+2. click setting icon
+3. click `+` to add a new source, and fill in the info. The source is the link that you set in nuget.config before.
+4. click update then in the manage page, select **package source**
+5. if it's first time connect, you will require to enter user name and password, which are same as the value in the nuget.config.
+6. then just select your package and install it like others Nuget package.
+
+Using Rider
+1. in the NuGet tab, go to **sources** tab
+2. click **+** in the **Feeds** list
+3. fill in the info. same as using VS2019, the info are same as the nuget.config
+4. go back to **Packages** tab, select your feed,  then just select your package and install it.
