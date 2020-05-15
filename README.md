@@ -14,10 +14,14 @@ Ref:
 1. create your class
 2. Open your project file (.csproj) and add the following minimal properties inside the existing <PropertyGroup> tag, changing the values as appropriate:
     ``` xml
-   <PackageId>AppLogger</PackageId>
-   <Version>1.0.0</Version>
-   <Authors>your_name</Authors>
-   <Company>your_company</Company> 
+     <PropertyGroup>
+         ......
+        <PackageId>AppLogger</PackageId>
+        <Version>1.0.0</Version>
+        <Authors>your_name</Authors>
+        <Company>your_company</Company> 
+        <RepositoryUrl>https://github.com/Repository</RepositoryUrl>
+    <PropertyGroup>
     ```
 3. `dotnet pack --configuration Release` to package the project 
 4. check out `\bin\Release`, a `PackageId.version.nupkg` file should be generated.
